@@ -1,0 +1,123 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;800&display=swap');
+*{
+	box-sizing: border-box;
+}
+
+body{
+	margin: 0;
+	font-family: 'Montserrat', sans-serif;
+	font-size: 14px;
+}
+p{
+	color: #565656;
+}
+
+h2{
+  font-size:18px;
+}
+
+h1, h2,h3{
+  font-weight:900;
+}
+
+header{
+	box-shadow: 0 2px 13px #c4c4c4;
+}
+
+header nav{
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	align-items: center;
+	padding: 1rem 2rem;
+}
+
+header nav ul{
+	list-style: none;
+	font-weight: 600;
+	color: #565656;
+}
+
+header nav a{
+	color: #000;
+	text-decoration: none;
+}
+
+main{
+	max-width: 900px;
+	width: 100%;
+	margin: 3rem auto;
+}
+
+main form{
+	display: flex;
+	flex-direction: column;
+}
+
+main form label{
+	font-weight: 900;
+	margin-top: 0.5rem;
+}
+
+main form input, textarea{
+	border-radius: 5px;
+	border: 1px solid #bababa;
+	padding: 0.5rem;
+}
+main form input{
+  width:50%;
+}
+
+section {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+section h2{
+	flex: 100%;
+}
+
+section article{
+	flex: 30%;
+	padding: 1rem;
+	min-width: 250px;
+  max-width:300px;
+	display: flex;
+	flex-direction: column;
+	box-shadow: 3px 2px 16px #b2e0da;
+	border-radius: 5px;
+}
+
+.todo-btn{
+	display: inline-block;
+	background: #5ad2c1;
+	color: #fff;
+	font-weight: 600;
+	padding: 0.5rem;
+	border-radius: 5px;
+	font-size: 11px;
+	text-decoration: none;
+	align-self: end;
+  margin:0.5rem 0;
+
+}
+
+form .todo-btn{
+  font-size:20px;
+  width:100px
+}
+
+#content {
+  height: 20vh;
+  min-height: 100px;
+}
+
+button{
+  border:none
+}
